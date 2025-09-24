@@ -1,1 +1,43 @@
-Css hinzugefügt
+.container, .top {
+    display: flex;
+    flex-direction: row;
+    height: 400px;
+}
+.nav {
+    width: 100px;
+}
+nav img, .nav a img {
+    display:block;
+    width: 100px;
+}
+.right {
+     width: 50%;
+     overflow:hidden;
+}
+
+.bild-rechts img {
+    width: 100%;
+}
+
+.fling-minislide {
+    width: 50%;
+    overflow: hidden;
+}
+ 
+.fling-minislide img{width:580px; position:absolute; animation:fling-minislide 20s infinite; opacity:0; }
+
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:1;}}
+.fling-minislide img:nth-child(3){animation-delay:15s;}
+.fling-minislide img:nth-child(2){animation-delay:10s;}
+.fling-minislide img:nth-child(1){animation-delay:0s;}
+.text1 {
+    flex: 1;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+}
+.img img {
+    width: 30%;
+}
