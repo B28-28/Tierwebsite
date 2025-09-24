@@ -1,0 +1,5 @@
+gem "github-pages", "~> 232"
+gem "jekyll-theme-primer", "~> 0.6.0"
+gem "jekyll-seo-tag"
+gem "jekyll-github-metadata"
+gem "jekyll-coffeescript"
