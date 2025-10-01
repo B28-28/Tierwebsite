@@ -1,80 +1,156 @@
 .container,
 .top {
-    display: flex;
-    flex-direction: row;
-    height: 400px;
+  display: flex;
+  flex-direction: row;
+  height: 400px;
 }
 
 .nav {
-    width: 100px;
+  display: flex;
+  width: 100px;
 }
 
 nav img,
 .nav a img {
-    display: block;
-    width: 100px;
+  display: block;
+  width: 100px;
 }
 
-.right {
-    width: 50%;
-    overflow: hidden;
-}
-
-.bild-rechts img {
-    width: 100%;
+.right img {
+  height: 100%;
+  width: auth;
 }
 
 .fling-minislide {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 }
 
 .fling-minislide img {
-    width: 600px;
-    position: absolute;
-    animation: fling-minislide 30s infinite;
-    opacity: 0;
+  width: 1000px;
+  height: 400px;
+  position: absolute;
+  animation: fling-minislide 30s infinite;
+  opacity: 0;
+  border-radius: 20px;
 }
 
 @keyframes fling-minislide {
-    25% {
-        opacity: 1;
-    }
+  25% {
+    opacity: 1;
+  }
 
-    40% {
-        opacity: 1;
-    }
+  40% {
+    opacity: 1;
+  }
 }
 
 .fling-minislide img:nth-child(3) {
-    animation-delay: 15s;
+  animation-delay: 15s;
 }
 
 .fling-minislide img:nth-child(2) {
-    animation-delay: 10s;
+  animation-delay: 10s;
 }
 
 .fling-minislide img:nth-child(1) {
-    animation-delay: 0s;
+  animation-delay: 0s;
 }
 
 .text1 {
-    flex: 1;
-}
-
-.bottom {
-    display: flex;
-    flex-direction: column;
+  flex: 1;
 }
 
 .img img {
-    width: 30%;
+  width: 30%;
+  border-radius: 20px;
 }
 
 h1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+ul {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+table,
+th,
+td {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.map {
+  justify-content: left;
+  align-items: left;
+  max-width: 30%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.text1 {
+  padding-left: 8px;
+}
+
+#braunbär {
+  background-image: url("../assets/WaldbildBraunbär.png");
+  width: 100%;
+  background-size: 60%;
+  border-radius: 20px;
+}
+
+#eisbär {
+  background-image: url("../assets/ArktisbildEisbär.png");
+  width: 100%;
+  background-size: 60%;
+  border-radius: 20px;
+}
+
+#panda {
+  background-image: url("../assets/WaldbildPanda.png");
+  width: 100%;
+  background-size: 60%;
+  border-radius: 20px;
+}
+
+.kontakt {
+  align-items: left;
+  height: auto;
+  border: 3px solid black;
+}
+
+.rechts1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.unten {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  border: 3px solid black;
+}
+
+.zusatzbild {
+  display: flex;
+  flex: 1;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
 }
